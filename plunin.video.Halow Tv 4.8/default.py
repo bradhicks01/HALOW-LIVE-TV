@@ -132,6 +132,10 @@ def Categories():
     AddDir("[COLOR green][B]ARGENTINA LIVE TV[/B][/COLOR]", Raw+"SfJupvk8" ,4 ,"http://img.freeflagicons.com/thumb/glossy_square_icon/argentina/argentina_640.png")
     AddDir("[COLOR green][B]Trinidad LIVE TV[/B][/COLOR]", Raw+"tSR1LCKA" ,4 ,"http://icons.iconseeker.com/png/fullsize/rounded-world-flags/trinidad-and-tobago-flag.png")
     AddDir("[COLOR green][B]GHANA LIVE TV[/B][/COLOR]", Raw+"37qch7SJ" ,4 ,"http://www.fancyicons.com/free-icons/103/flags/png/256/ghana_flag_256.png")
+    AddDir("[COLOR green][B]Ireland LIVE TV[/B][/COLOR]", Raw+"Er6tEtp9" ,4 ,"http://icons.iconarchive.com/icons/hopstarter/flag/256/Ireland-icon.png")
+    AddDir("[COLOR green][B]Canada LIVE TV[/B][/COLOR]", Raw+"H48aVN7Z" ,4 ,"http://icons.iconarchive.com/icons/custom-icon-design/flag-2/256/Canada-Flag-icon.png")
+    AddDir("[COLOR green][B]Chinia LIVE TV[/B][/COLOR]", Raw+"yw4yLJMm" ,4 ,"http://icons.iconarchive.com/icons/custom-icon-design/flag-2/256/China-Flag-icon.png")
+    AddDir("[COLOR green][B]Webcams  LIVE TV[/B][/COLOR]", Raw+"3QsyXVHa" ,4 ,"http://www.mhub.tv/wp-content/uploads/2013/12/webcam.png")
 
 
     xbmc.executebuiltin('Container.SetViewMode(25)') 
