@@ -141,13 +141,14 @@ def Categories():
    
 
 def MOVIES():
-        AddDir('[COLOR white][B]Featured[/B][/COLOR]',custurl1+'featured-movies/',52,"http://www.mrcolionnoir.com/wp-content/uploads/2013/08/Featured.png")
-        AddDir('[COLOR white][B]New Releases[/B][/COLOR]',custurl1+'new-releases/',52,"http://www.presentation-process.com/images/New-icon.gif")
-        AddDir('[COLOR white][B]Latest Added[/B][/COLOR]',custurl1+'latest-added/',52,"http://comps.canstockphoto.com/can-stock-photo_csp16348546.jpg")
-        AddDir('[COLOR white][B]HD[/B][/COLOR]',custurl1+'latest-hd-movies/',52,"http://s5.postimg.org/pwa1iwsiv/image.png")
-        AddDir('[COLOR white][B]Most Viewed[/B][/COLOR]',custurl1+'most-viewed/',52,"https://www.colourbox.com/preview/10743341-most-viewed-sign-icon-most-watched-symbol.jpg")
-        AddDir('[COLOR white][B]Search[/B][/COLOR]',custurl1+'most-viewed/',79,"http://c.dryicons.com/images/icon_sets/shine_icon_set/png/256x256/movie_search.png")
-        AddDir('[COLOR white][B]TRAILERS[/B][/COLOR]','movieclipsTRAILERS',11,"http://i292.photobucket.com/albums/mm16/kiwijunglist/category/th_Trailers.png")
+        AddDir('[COLOR yellow][B]Featured[/B][/COLOR]',custurl1+'featured-movies/',52,"http://www.mrcolionnoir.com/wp-content/uploads/2013/08/Featured.png")
+        AddDir('[COLOR yellow][B]New Releases[/B][/COLOR]',custurl1+'new-releases/',52,"http://www.presentation-process.com/images/New-icon.gif")
+        AddDir('[COLOR yellow][B]Latest Added[/B][/COLOR]',custurl1+'latest-added/',52,"http://comps.canstockphoto.com/can-stock-photo_csp16348546.jpg")
+        AddDir('[COLOR yellow][B]HD[/B][/COLOR]',custurl1+'latest-hd-movies/',52,"http://s5.postimg.org/pwa1iwsiv/image.png")
+        AddDir('[COLOR yellow][B]Most Viewed[/B][/COLOR]',custurl1+'most-viewed/',52,"https://www.colourbox.com/preview/10743341-most-viewed-sign-icon-most-watched-symbol.jpg")
+        AddDir('[COLOR yellow][B]Search[/B][/COLOR]',custurl1+'most-viewed/',79,"http://c.dryicons.com/images/icon_sets/shine_icon_set/png/256x256/movie_search.png")
+        AddDir('[COLOR yellow][B]TRAILERS[/B][/COLOR]','movieclipsTRAILERS',11,"http://i292.photobucket.com/albums/mm16/kiwijunglist/category/th_Trailers.png")
+        AddDir("[COLOR yellow][B]Cartoon [/B][/COLOR]", Raw+"a44ww8ni" ,4 ,"http://forums.windowscentral.com/attachments/app-spotlight/61347d1396600938t-tomjerry_icon.png")
         xbmc.executebuiltin("Container.SetViewMode(500)") 
         
 def TV():
