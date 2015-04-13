@@ -10,7 +10,7 @@ from t0mm0.common.addon import Addon
 from metahandler import metahandlers
 from addon.common.net import Net
 
-PlaylistUrl = "http://aaastream.com"
+PlaylistUrl = ""
 AddonID = 'plugin.video.Halow'
 Addon = xbmcaddon.Addon(AddonID)
 localizedString = Addon.getLocalizedString
