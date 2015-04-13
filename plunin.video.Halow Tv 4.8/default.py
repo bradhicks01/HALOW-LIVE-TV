@@ -85,6 +85,7 @@ def Categories():
 
            
     AddDir("[COLOR red][B]ALL MOVIES[/B][/COLOR]",'movies',44 ,"http://tooply.com/photo/item/570/6705854011001.jpg")
+    AddDir("[COLOR red][B]TV series[/B][/COLOR]",'TV',45 ,"http://fc09.deviantart.net/fs70/i/2013/002/d/a/tv_series_folder_icons_pack_2_by_atti12-d5q5h7z.png") 	
     AddDir("[COLOR blue][B]Football Replays[/B][/COLOR]", "REPLAYS" ,150 ,"http://3.bp.blogspot.com/-a3BcIcfxTTw/VO7-K7t9tgI/AAAAAAAAKdA/_yDy5iOo7sE/s1600/FOOTBALL%2BREPLAYS.PNG")    
     AddDir("[COLOR green][B]Live Football today[/B][/COLOR]", Raw+"CzHx9fYM" ,4 ,"http://www.bestappspoint.com/wp-content/uploads/2012/02/epl-live.jpg")
     AddDir("[COLOR green][B]SPORT  LIVE TV[/B][/COLOR]", Raw+"MqqxxXaT" ,4 ,"http://themetoday.com/wp-content/uploads/2010/01/Various-Sport_Icons.jpg")
@@ -149,13 +150,14 @@ def MOVIES():
         AddDir('[COLOR white][B]Most Viewed[/B][/COLOR]',custurl1+'most-viewed/',52,"https://www.colourbox.com/preview/10743341-most-viewed-sign-icon-most-watched-symbol.jpg")
         AddDir('[COLOR white][B]Search[/B][/COLOR]',custurl1+'most-viewed/',79,"http://c.dryicons.com/images/icon_sets/shine_icon_set/png/256x256/movie_search.png")
         AddDir('[COLOR white][B]TRAILERS[/B][/COLOR]','movieclipsTRAILERS',11,"http://i292.photobucket.com/albums/mm16/kiwijunglist/category/th_Trailers.png")
+      
         xbmc.executebuiltin("Container.SetViewMode(500)") 
         
 def TV():
-        AddDir('[COLOR white]Newest Episodes [/COLOR]',custurltv+'new-episodes/',77,'http://s5.postimg.org/xsuir53zb/new.png')
-        AddDir('[COLOR white]Latest Added[/COLOR]',custurltv+'latest-added/',75,'http://s5.postimg.org/5rghdfyp3/latest_added.png')
-        AddDir('[COLOR white]Search[/COLOR]',custurltv,78,'http://s5.postimg.org/rhpbaq2qv/search.png')
-        AddDir('[COLOR white]A-Z[/COLOR]',custurltv+'tv-listings/0-9',82,'http://s5.postimg.org/t19z1a4x3/tvshows.jpg')
+        AddDir('[COLOR red]Newest Episodes [/COLOR]',custurltv+'new-episodes/',77,'http://www.allchilliwackrealestate.com/wp-content/uploads/2014/04/new_icon.jpg')
+        AddDir('[COLOR red]Latest Added[/COLOR]',custurltv+'latest-added/',75,'http://blog.bansaltestprep.com/wp-content/uploads/2012/09/latest_icon_2_by_tiennythe-d2zo547.jpg')
+        AddDir('[COLOR red]Search[/COLOR]',custurltv,78,'http://www.tutorialsscripts.com/free-icons/search-icons/purple-search-icon-256-x-256.jpg')
+        AddDir('[COLOR red]A-Z[/COLOR]',custurltv+'tv-listings/0-9',82,'http://i.ytimg.com/vi/yE4Jxq-3SrM/hqdefault.jpg')
   		
         GenresPage = net.http_GET(custurltv+'genres/action').content
         GenresPage = GenresPage.encode('ascii', 'ignore').decode('ascii')
@@ -166,9 +168,9 @@ def TV():
 		
         for url,name in match:
                 name = CLEAN(name)
-                AddDir('[COLOR white]'+name+'[/COLOR]',custurltv+url,83,"http://www.iconarchive.com/download/i14263/hydrattz/multipurpose-alphabet/Letter-"+name[:1]+"-black.ico")
+                AddDir('[COLOR red]'+name+'[/COLOR]',custurltv+url,83,"http://www.iconarchive.com/download/i14263/hydrattz/multipurpose-alphabet/Letter-"+name[:1]+"-red.ico")
 
-        xbmc.executebuiltin("Container.SetViewMode(500)")
+        xbmc.executebuiltin("Container.SetViewMode(50)")
 		
 def REPLAYS():
         custurlreplay = str(base64.decodestring(LocalisedReplay))
@@ -280,8 +282,8 @@ def FootballTeams(url):
 def StreamsList(url):
     links = net.http_GET(Raw+url).content
     match=re.compile('I:"(.+?)" A:"(.+?)" B:"(.+?)" C:"(.+?)"').findall(str(links))
-    AddDir("[COLOR white][B] BONUS PACK [/B][/COLOR]", "Bqdg4C4g" ,10 ,"http://i.ytimg.com/vi/yE4Jxq-3SrM/hqdefault.jpg")
-    AddDir("[COLOR white][B] COUNTRY [/B][/COLOR]", "Bqdg4C4g" ,5 ,"http://i.ytimg.com/vi/yE4Jxq-3SrM/hqdefault.jpg")
+    AddDir("[COLOR white][B] BONUS PACK [/B][/COLOR]", "n9BF6Cwe" ,10 ,"http://i.ytimg.com/vi/yE4Jxq-3SrM/hqdefault.jpg")
+    AddDir("[COLOR white][B] COUNTRY [/B][/COLOR]", "n9BF6Cwe" ,5 ,"http://i.ytimg.com/vi/yE4Jxq-3SrM/hqdefault.jpg")
     
     all_videos = regex_get_all(links, 'I:', '"#')
     for a in all_videos:
@@ -616,7 +618,7 @@ def getStreamUrl(id):
 def video_artists(name,url):
     alphabet =  ['0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U','V', 'W', 'X', 'Y', 'Z']
     for a in alphabet:
-        MusicAddDir(a,url+a.lower(),106,"http://www.iconarchive.com/download/i14263/hydrattz/multipurpose-alphabet/Letter-"+a.upper()+"-black.ico",'1')
+        MusicAddDir(a,url+a.lower(),106,"http://www.iconarchive.com/download/i14263/hydrattz/multipurpose-alphabet/Letter-"+a.upper()+"-red.ico",'1')
     
     xbmc.executebuiltin("Container.SetViewMode(500)")
 	
@@ -630,7 +632,7 @@ def Get_video_artists_AZ(name,url):
     for url, title in match:
         MusicAddDir(title,url,107,'','n')
 		
-    xbmc.executebuiltin("Container.SetViewMode(50)")	
+    xbmc.executebuiltin("Container.SetViewMode(500)")	
 
 
 def SEARCHTV(url):
